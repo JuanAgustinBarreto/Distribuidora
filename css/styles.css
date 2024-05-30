@@ -1,0 +1,233 @@
+/* Estilos adicionales para la página de lista de productos */
+
+.productos-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #b0e0e6, #87CEEB, #ffffff);
+    /* Degradado azul a celeste a blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    /* Transición suave del fondo al pasar el ratón */
+}
+
+.lista-productos-header {
+    text-align: center;
+    font-size: 124px;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 80%;
+    margin: 50px auto;
+    /* Modificado para mover la tabla más hacia abajo */
+    overflow-x: auto;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.carrito-container {
+    display: none;
+}
+
+
+/* Estilos para el botón de Carrito de Compras */
+
+.btn-carrito {
+    padding: 20px;
+    border: none;
+    background: #0f0f2b;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.btn-carrito:hover {
+    background: #0000cc;
+}
+
+
+/* Estilos para los botones de volver atrás e ir a lista de clientes */
+
+.botones-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 30px;
+    width: 150%;
+    margin: 10 auto;
+}
+
+.botones-container .volver {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones-container .ir-a-clientes {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones-container .volver:hover,
+.botones-container .ir-a-clientes:hover {
+    background-color: #dd2525;
+}
+
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para el login */
+
+.login-body {
+    background: linear-gradient(to bottom right, #0000ff, #00ffff);
+    /* Degradado azul a celeste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    background: #0000ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #0000cc;
+    /* Cambia a un azul más oscuro al pasar el ratón */
+}
+
+
+/* Estilos para las otras páginas */
+
+.menu-container,
+.productos-container,
+.clientes-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #87CEEB, #00BFFF, #ffffff);
+    /* Degradado azul a celeste a blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    /* Transición suave del fondo al pasar el ratón */
+}
+
+
+/* Cambio de color del fondo al pasar el ratón */
+
+.menu-container:hover,
+.productos-container:hover,
+.clientes-container:hover {
+    background: linear-gradient(to bottom, #b0e0e6, #87CEEB, #ffffff);
+    /* Cambia a un tono más claro al pasar el ratón */
+}
+
+
+/* Estilos para el botón de volver atrás */
+
+button.volver {
+    position: fixed;
+    /* Fija la posición del botón */
+    top: 20px;
+    /* Distancia desde la parte superior */
+    left: 20px;
+    /* Distancia desde la izquierda */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.volver:hover {
+    background-color: #333;
+    /* Cambiar color de fondo al pasar el ratón */
+}
+
+
+/* Resto de estilos mantenidos como están */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}

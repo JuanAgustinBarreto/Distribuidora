@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="lista-productos-header">Lista de Productos</div>
+    <div class="table-container">
+        <table id="productosTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Cantidad Stock</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenará la tabla con los productos -->
+            </tbody>
+        </table>
+    </div>
+    <button class="btn-carrito">Carrito de Compras</button>
+    <!-- Nuevo botón de Carrito de Compras -->
+    <div class="carrito-container">
+        <div class="carrito">
+            <h3>Carrito de Compras</h3>
+            <ul id="carritoList">
+                <!-- Aquí se listarán los productos en el carrito -->
+            </ul>
+            <button onclick="generarPedido()">Generar Pedido</button>
+        </div>
+    </div>
+    <div class="botones-container">
+        <button class="volver" onclick="window.history.back()">Volver atrás</button>
+        <button class="ir-a-clientes" onclick="window.location.href='clientes.html'">Ir a Lista Clientes</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
